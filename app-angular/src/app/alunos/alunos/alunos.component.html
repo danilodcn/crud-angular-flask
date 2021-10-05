@@ -1,0 +1,32 @@
+<table mat-table [dataSource]="alunos" class="mat-elevation-z8">
+
+  
+  <!-- Name Column -->
+  <ng-container matColumnDef="nome">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{ element.nome }} </td>
+  </ng-container>
+
+   <!-- Name Column -->
+   <ng-container matColumnDef="numero">
+    <th mat-header-cell *matHeaderCellDef> Numero </th>
+    <td mat-cell *matCellDef="let element"> {{ element.numero }} </td>
+  </ng-container>
+
+ <!-- Name Column -->
+  <ng-container matColumnDef="turma">
+  <th mat-header-cell *matHeaderCellDef> Turma </th>
+  <td mat-cell *matCellDef="let element"> {{ element.turma }} </td>
+  </ng-container>
+
+   <!-- Name Column -->
+  <ng-container matColumnDef="curso_hab">
+    <th mat-header-cell *matHeaderCellDef> Curso </th>
+    <td mat-cell *matCellDef="let element"> {{ element.curso_hab }} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+
